@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-//import Headerlogo from '../img/header-logo.png';
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -17,40 +16,38 @@ class Header extends Component {
 
   render() {
     return (
-        <header class="container">
-           {/* <Link to="#">123</Link> */}
-        <div class="row">
-          <div class="col">
-            <nav class="navbar navbar-expand-sm navbar-light bg-light">
-              
-              {/* <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <Link class="nav-link" to="/">Главная</Link>
+        <header className="container">
+        <div className="row">
+          <div className="col">
+            <nav className="navbar navbar-expand-sm navbar-light bg-light">
+              <div className="collapse navbar-collapse" id="navbarMain">
+                <ul className="navbar-nav mr-auto">
+                  <li className="nav-item active">
+                    <Link className="nav-link" to="/">Главная</Link>
                   </li>
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/catalog.html">Каталог</Link>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/catalog">Каталог</Link>
                   </li>
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/about.html">О магазине</Link>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/about">О магазине</Link>
                   </li>
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/contacts.html">Контакты</Link>
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/contacts">Контакты</Link>
                   </li>
                 </ul>
                 <div>
-                  <div class="header-controls-pics">
-                    <div data-id="search-expander" class="header-controls-pic header-controls-search"></div>
-                    <div class="header-controls-pic header-controls-cart">
-                      <div class="header-controls-cart-full">1</div>
-                      <div class="header-controls-cart-menu"></div>
+                  <div className="header-controls-pics">
+                    <div data-id="search-expander" className="header-controls-pic header-controls-search"></div>
+                    <div className="header-controls-pic header-controls-cart">
+                      <div className="header-controls-cart-full">1</div>
+                      <div className="header-controls-cart-menu"></div>
                     </div>
                   </div>
-                  <form data-id="search-form" class="header-controls-search-form form-inline invisible">
-                    <input class="form-control" placeholder="Поиск" />
+                  <form data-id="search-form" className="header-controls-search-form form-inline invisible">
+                    <input className="form-control" placeholder="Поиск" />
                   </form>
                 </div>
-              </div> */}
+              </div>
             </nav>
           </div>
         </div>

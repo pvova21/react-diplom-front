@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import banner from '../img/banner.jpg';
+
 
 class InfoPage extends Component {
   constructor(props) {
@@ -16,20 +16,20 @@ class InfoPage extends Component {
 
   render() {
     return (
-      <main class="container">
-      <div class="row">
-        <div class="col">
-          <div class="banner">
-            <img src={banner} class="img-fluid" alt="К весне готовы!" />
-            <h2 class="banner-header">К весне готовы!</h2>
+      <main className="container">
+      <div className="row">
+        <div className="col">
+          <div className="banner">
+            <img src={require('../img/banner.jpg')} className="img-fluid" alt="К весне готовы!" />
+            <h2 className="banner-header">К весне готовы!</h2>
           </div>
-          <section class="top-sales">
-            <h2 class="text-center">О магазине</h2>
+          <section className="top-sales">
+            <h2 className="text-center">О магазине</h2>
             <p>
               В Интернете можно встретить немало магазинов, предлагающих аксессуары. Но именно к нам хочется
               возвращаться снова и снова.
             </p>
-            <p class="h4 text-center">Мы предлагаем вам особые условия:</p>
+            <p className="h4 text-center">Мы предлагаем вам особые условия:</p>
             <ol>
               <li>Индивидуальный подход специалиста. Когда поступает новая коллекция обуви весна-лето или
                 же коллекция обуви осень-зима – покупателям бывает трудно сориентироваться во всем

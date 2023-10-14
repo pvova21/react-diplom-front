@@ -16,16 +16,16 @@ class Basket extends Component {
 
   render() {
     return (
-      <main class="container">
-      <div class="row">
-        <div class="col">
-          <div class="banner">
-            <img src="./img/banner.jpg" class="img-fluid" alt="К весне готовы!" />
-            <h2 class="banner-header">К весне готовы!</h2>
+      <main className="container">
+      <div className="row">
+        <div className="col">
+          <div className="banner">
+            <img src={require('../img/banner.jpg')} className="img-fluid" alt="К весне готовы!" />
+            <h2 className="banner-header">К весне готовы!</h2>
           </div>
-          <section class="cart">
-            <h2 class="text-center">Корзина</h2>
-            <table class="table table-bordered">
+          <section className="cart">
+            <h2 className="text-center">Корзина</h2>
+            <table className="table table-bordered">
               <thead>
                 <tr>
                   <th scope="col">#</th>
@@ -45,32 +45,32 @@ class Basket extends Component {
                   <td>1</td>
                   <td>34 000 руб.</td>
                   <td>34 000 руб.</td>
-                  <td><button class="btn btn-outline-danger btn-sm">Удалить</button></td>
+                  <td><button className="btn btn-outline-danger btn-sm">Удалить</button></td>
                 </tr>
                 <tr>
-                  <td colspan="5" class="text-right">Общая стоимость</td>
+                  <td colspan="5" className="text-right">Общая стоимость</td>
                   <td>34 000 руб.</td>
                 </tr>
               </tbody>
             </table>
           </section>
-          <section class="order">
-            <h2 class="text-center">Оформить заказ</h2>
-            <div class="card" style="max-width: 30rem; margin: 0 auto;">
-              <form class="card-body">
-                <div class="form-group">
+          <section className="order">
+            <h2 className="text-center">Оформить заказ</h2>
+            <div className="card" style={{maxWidth: "30rem", margin: "0 auto"}}>
+              <form className="card-body">
+                <div className="form-group">
                   <label for="phone">Телефон</label>
-                  <input class="form-control" id="phone" placeholder="Ваш телефон" />
+                  <input className="form-control" id="phone" placeholder="Ваш телефон" />
                 </div>
-                <div class="form-group">
+                <div className="form-group">
                   <label for="address">Адрес доставки</label>
-                  <input class="form-control" id="address" placeholder="Адрес доставки" />
+                  <input className="form-control" id="address" placeholder="Адрес доставки" />
                 </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" id="agreement" />
-                  <label class="form-check-label" for="agreement">Согласен с правилами доставки</label>
+                <div className="form-group form-check">
+                  <input type="checkbox" className="form-check-input" id="agreement" />
+                  <label className="form-check-label" for="agreement">Согласен с правилами доставки</label>
                 </div>
-                <button type="submit" class="btn btn-outline-secondary">Оформить</button>
+                <button type="submit" className="btn btn-outline-secondary">Оформить</button>
               </form>
             </div>
           </section>

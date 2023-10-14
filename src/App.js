@@ -12,10 +12,9 @@ import Contacts from './components/Contacts';
 
 function App() {
   return (
-    
     <div className="App">
-      <Header />
       <BrowserRouter>
+        <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/error" element={<Error />} />
@@ -25,8 +24,8 @@ function App() {
             <Route path="/product" element={<ProductPage />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

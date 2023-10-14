@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+//import ConstImages from './ConstImages';
 
 class CatalogPage extends Component {
   constructor(props) {
@@ -16,105 +17,105 @@ class CatalogPage extends Component {
 
   render() {
     return (
-      <main class="container">
-      <div class="row">
-        <div class="col">
-          <div class="banner">
-            <img src="./img/banner.jpg" class="img-fluid" alt="К весне готовы!" />
-            <h2 class="banner-header">К весне готовы!</h2>
+      <main className="container">
+      <div className="row">
+        <div className="col">
+          <div className="banner">
+            <img src={require('../img/banner.jpg')}className="img-fluid" alt="К весне готовы!" />
+            <h2 className="banner-header">К весне готовы!</h2>
           </div>
-          <section class="catalog">
-            <h2 class="text-center">Каталог</h2>
-            <form class="catalog-search-form form-inline">
-              <input class="form-control" placeholder="Поиск" />
+          <section className="catalog">
+            <h2 className="text-center">Каталог</h2>
+            <form className="catalog-search-form form-inline">
+              <input className="form-control" placeholder="Поиск" />
             </form>
-            <ul class="catalog-categories nav justify-content-center">
-              <li class="nav-item">
-                <Link class="nav-link active" to="#">Все</Link>
+            <ul className="catalog-categories nav justify-content-center">
+              <li className="nav-item">
+                <Link className="nav-link active" to="#">Все</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="#">Женская обувь</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">Женская обувь</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="#">Мужская обувь</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">Мужская обувь</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="#">Обувь унисекс</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">Обувь унисекс</Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="#">Детская обувь</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="#">Детская обувь</Link>
               </li>
             </ul>
-            <div class="row">
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/sandals_myer.jpg"
-                    class="card-img-top img-fluid" alt="Босоножки 'MYER'" />
-                  <div class="card-body">
-                    <p class="card-text">Босоножки 'MYER'</p>
-                    <p class="card-text">34 000 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+            <div className="row">
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/sandals_myer.jpg')}
+                    className="card-img-top img-fluid" alt="Босоножки 'MYER'" />
+                  <div className="card-body">
+                    <p className="card-text">Босоножки 'MYER'</p>
+                    <p className="card-text">34 000 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/sandals_keira.jpg"
-                    class="card-img-top img-fluid" alt="Босоножки 'Keira'" />
-                  <div class="card-body">
-                    <p class="card-text">Босоножки 'Keira'</p>
-                    <p class="card-text">7 600 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/sandals_keira.jpg')}
+                    className="card-img-top img-fluid" alt="Босоножки 'Keira'" />
+                  <div className="card-body">
+                    <p className="card-text">Босоножки 'Keira'</p>
+                    <p className="card-text">7 600 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/superhero_sneakers.jpg"
-                    class="card-img-top img-fluid" alt="Супергеройские кеды" />
-                  <div class="card-body">
-                    <p class="card-text">Супергеройские кеды</p>
-                    <p class="card-text">1 400 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/superhero_sneakers.jpg')}
+                    className="card-img-top img-fluid" alt="Супергеройские кеды" />
+                  <div className="card-body">
+                    <p className="card-text">Супергеройские кеды</p>
+                    <p className="card-text">1 400 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/sandals_myer.jpg"
-                    class="card-img-top img-fluid" alt="Босоножки 'MYER'" />
-                  <div class="card-body">
-                    <p class="card-text">Босоножки 'MYER'</p>
-                    <p class="card-text">34 000 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/sandals_myer.jpg')}
+                    className="card-img-top img-fluid" alt="Босоножки 'MYER'" />
+                  <div className="card-body">
+                    <p className="card-text">Босоножки 'MYER'</p>
+                    <p className="card-text">34 000 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/sandals_keira.jpg"
-                    class="card-img-top img-fluid" alt="Босоножки 'Keira'" />
-                  <div class="card-body">
-                    <p class="card-text">Босоножки 'Keira'</p>
-                    <p class="card-text">7 600 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/sandals_keira.jpg')}
+                    className="card-img-top img-fluid" alt="Босоножки 'Keira'" />
+                  <div className="card-body">
+                    <p className="card-text">Босоножки 'Keira'</p>
+                    <p className="card-text">7 600 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
-              <div class="col-4">
-                <div class="card catalog-item-card">
-                  <img src="./img/products/superhero_sneakers.jpg"
-                    class="card-img-top img-fluid" alt="Супергеройские кеды" />
-                  <div class="card-body">
-                    <p class="card-text">Супергеройские кеды</p>
-                    <p class="card-text">1 400 руб.</p>
-                    <Link to="/products/1.html" class="btn btn-outline-primary">Заказать</Link>
+              <div className="col-4">
+                <div className="card catalog-item-card">
+                  <img src={require('../img/products/superhero_sneakers.jpg')}
+                    className="card-img-top img-fluid" alt="Супергеройские кеды" />
+                  <div className="card-body">
+                    <p className="card-text">Супергеройские кеды</p>
+                    <p className="card-text">1 400 руб.</p>
+                    <Link to="/products/1.html" className="btn btn-outline-primary">Заказать</Link>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-center">
-              <button class="btn btn-outline-primary">Загрузить ещё</button>
+            <div className="text-center">
+              <button className="btn btn-outline-primary">Загрузить ещё</button>
             </div>
           </section>
         </div>

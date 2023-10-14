@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import banner from '../img/header-logo.png';
+
 
 class Error extends Component {
   constructor(props) {
@@ -16,15 +16,15 @@ class Error extends Component {
 
   render() {
     return (
-      <main class="container">
-      <div class="row">
-        <div class="col">
-          <div class="banner">
-            <img src={banner} class="img-fluid" alt="К весне готовы!" />
-            <h2 class="banner-header">К весне готовы!</h2>
+      <main className="container">
+      <div className="row">
+        <div className="col">
+          <div className="banner">
+            <img src={require('../img/banner.jpg')} className="img-fluid" alt="К весне готовы!" />
+            <h2 className="banner-header">К весне готовы!</h2>
           </div>
-          <section class="top-sales">
-            <h2 class="text-center">Страница не найдена</h2>
+          <section className="top-sales">
+            <h2 className="text-center">Страница не найдена</h2>
             <p>
               Извините, такая страница не найдена!
             </p>
